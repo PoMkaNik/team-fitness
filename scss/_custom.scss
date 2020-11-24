@@ -235,23 +235,26 @@ footer {
   }
 }
 
-.classes {
+.classes,
+.trainers {
   @include callout-changes();
-
-  h1 {
-    @media screen and (max-width: 39.99875em) {
-      font-size: 3rem;
-    }
-  }
-
-  h3 {
-    @media screen and (max-width: 39.99875em) {
-      font-size: 2rem;
-    }
-  }
 
   .thumbnail {
     margin-bottom: 0;
+  }
+
+  @media screen and (max-width: 39.99875em) {
+    h1 {
+      font-size: 3rem;
+    }
+
+    h3 {
+      font-size: 2rem;
+    }
+
+    .thumbnail {
+      margin-bottom: 1rem;
+    }
   }
 }
 
