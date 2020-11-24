@@ -203,6 +203,12 @@ footer {
 .about {
   @include callout-changes();
 
+  h1 {
+    @media screen and (max-width: 39.99875em) {
+      font-size: 3rem;
+    }
+  }
+
   .grid-x {
     margin-bottom: 1rem;
 
@@ -226,6 +232,26 @@ footer {
     p {
       margin-bottom: 0;
     }
+  }
+}
+
+.classes {
+  @include callout-changes();
+
+  h1 {
+    @media screen and (max-width: 39.99875em) {
+      font-size: 3rem;
+    }
+  }
+
+  h3 {
+    @media screen and (max-width: 39.99875em) {
+      font-size: 2rem;
+    }
+  }
+
+  .thumbnail {
+    margin-bottom: 0;
   }
 }
 
