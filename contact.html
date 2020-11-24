@@ -1,0 +1,132 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="node_modules/motion-ui/dist/motion-ui.min.css">
+  <!-- google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;700&display=swap" rel="stylesheet">
+  <!-- custom css -->
+  <link rel="stylesheet" href="css/app.css">
+
+  <title>TeamFitness | Contact Us</title>
+</head>
+
+<body>
+  <nav class="grid-container">
+    <div class="grid-x align-middle">
+      <div class="cell medium-3 large-4 text-center medium-text-left">
+        <h1><img src="img/logo.png" alt="logo"></h1>
+      </div>
+      <div class="cell medium-9 large-8">
+        <div class="title-bar align-center" data-responsive-toggle="responsive-menu" data-hide-for="medium">
+          <button class="menu-icon" type="button" data-toggle="responsive-menu"></button>
+        </div>
+
+        <div class="top-bar" id="responsive-menu">
+          <div class="top-bar-left">
+            <ul class="menu">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="classes.html">Classes</a></li>
+              <li><a href="trainers.html">Trainers</a></li>
+              <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <section class="contact-form grid-container callout">
+    <h1>Contact US</h1>
+    <div class="grid-x">
+      <div class="cell large-6 large-offset-3 medium-8 medium-offset-2">
+        <form class="contact-form" data-abide>
+          <div data-abide-error class="alert callout" style="display: none;">
+            <p><i class="fi-alert"></i> There are some errors in your form.</p>
+          </div>
+          <div class="name-field">
+            <label>Name <small>required</small>
+              <input type="text" id="name" name="name" required pattern="[a-zA-Z]+">
+              <span class="form-error">Name is required and must be a string</span>
+            </label>
+          </div>
+          <div class="email-field">
+            <label>Email <small>required</small>
+              <input type="email" id="email" name="email" required>
+              <span class="form-error">An email address is required</span>
+            </label>
+          </div>
+          <div class="phone-field">
+            <label>Phone <small>optional</small>
+              <input type="email" id="email" name="email">
+            </label>
+          </div>
+
+          <fieldset class="fieldset">
+            <legend>Best time to call (optional)</legend>
+            <div class="check-options">
+              <div class="check-options__item">
+                <input id="checkbox12" type="checkbox">
+                <label for="checkbox12">Morning</label>
+              </div>
+              <div class="check-options__item">
+                <input id="checkbox22" type="checkbox">
+                <label for="checkbox22">Afternoon</label>
+              </div>
+              <div class="check-options__item">
+                <input id="checkbox32" type="checkbox">
+                <label for="checkbox32">Evening</label>
+              </div>
+              <div class="check-options__item">
+                <input id="checkbox42" type="checkbox">
+                <label for="checkbox42">Do Not Call</label>
+              </div>
+            </div>
+          </fieldset>
+
+          <div class="messsage-field">
+            <label>Message <small>required</small>
+              <textarea name="message" id="message" required></textarea>
+              <span class="form-error">Message is required</span>
+            </label>
+          </div>
+          <button type="submit" class="button large" value="Submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="grid-container">
+      <div class="grid-x align-middle text-center">
+        <div class="cell medium-4 small-order-2 medium-order-1">
+          <p>&copy; Copyright Team Fitness</p>
+        </div>
+        <div class="cell medium-8 small-order-1 medium-order-2">
+          <ul class="menu align-center">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="node_modules/jquery/dist/jquery.js"></script>
+  <script src="node_modules/motion-ui/dist/motion-ui.min.js"></script>
+  <script src="node_modules/what-input/dist/what-input.js"></script>
+  <script src="node_modules/foundation-sites/dist/js/foundation.js"></script>
+  <!-- font awesome -->
+  <script src="js/all.min.js"></script>
+  <!-- custom js -->
+  <script src="js/app.js"></script>
+</body>
+
+</html>

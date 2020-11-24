@@ -258,6 +258,38 @@ footer {
   }
 }
 
+.contact-form {
+  @include callout-changes();
+  label:not(.is-invalid-label) {
+    color: $white;
+  }
+
+  span,
+  label {
+    font-size: 20px;
+  }
+
+  button[type='submit'] {
+    @media screen and (max-width: 39.99875em) {
+      display: block;
+      width: 100%;
+    }
+  }
+}
+
+.check-options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  @media screen and (max-width: 39.99875em) {
+    justify-content: center;
+  }
+
+  &__item {
+  }
+}
+
 /* Small only */
 @media screen and (max-width: 39.99875em) {
   // height: 90px;
